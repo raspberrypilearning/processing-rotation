@@ -7,12 +7,6 @@ In this example, the screen is rotated `45` degrees everytime the `eye()` is dra
 
 ![The output area with a moving image showing a rotating eye made of circles](images/rotate_eye.gif)
 
---- collapse ---
-
----
-title: Rotation
----
-
 --- code ---
 ---
 language: python
