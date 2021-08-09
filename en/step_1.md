@@ -1,59 +1,49 @@
-## Introduction
 
-Add project description here. What will learners be making? Broadly what skills will they be learning?
+`Rotate()` moves the screen around a set of coordinates. In Processing, rotations happen in **radians** but you can convert this to **degrees** using the `radians()` function, `rotate(radians(90))` would be equal to rotating `90` degrees. 
 
-### What you will make
+Positive numbers rotate objects in a clockwise direction and negative numbers rotate in the couterclockwise direction. 
 
---- no-print ---
-Add instructions for interacting with the embedded content here.
+In this example, the screen is rotated `45` degrees everytime the `eye()` is drawn. 
 
-<div class="scratch-preview">
-  <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/160619869/?autostart=false" frameborder="0"></iframe>
-</div>
---- /no-print ---
-
---- print-only ---
-![Complete project](images/showcase_static.png)
---- /print-only ---
+![The output area with a moving image showing a rotating eye made of circles](images/rotate_eye.gif)
 
 --- collapse ---
+
 ---
-title: What you will need
----
-### Hardware
-
-+ A computer or tablet capable of running Scratch 3
-
-### Software
-
-+ Scratch 3 (either [online](https://scratch.mit.edu/){:target="_blank"} or [offline](https://scratch.mit.edu/download){:target="_blank"})
-+ Python 3
-+ This project can be completed in a web browser using [trinket.io](https://trinket.io/)
-
-### Downloads
-
-+ Download the project [starter file](http://rpf.io/p/en/projectName-go){:target="_blank"} if working offline
-
---- /collapse ---
-
---- collapse ---
----
-title: What you will learn
+title: Rotation
 ---
 
-+ Learning objective 1
-+ Learning objective 2
-+ Learning objective 3
-
---- /collapse ---
-
---- collapse ---
+--- code ---
 ---
-title: Additional information for educators
+language: python
 ---
 
-You can download the completed project [here](http://rpf.io/p/en/projectName-get){:target="_blank"}.
+def draw():
+  
+  translate(width/2, height/2) # Move screen to the middle 
 
-If you need to print this project, please use the [printer-friendly version](https://projects.raspberrypi.org/en/projects/projectName/print){:target="_blank"}.
+  for i in range(frame_count):
+    eye()
+    rotate(radians(45)) # 45 degrees
+  
+def eye():
 
---- /collapse ---
+# Eye colours
+  BLUE = color(1, 32, 100)
+  BLACK = color(0, 0, 0)
+  WHITE = color(255, 255, 255)
+  
+# Create an eye
+  stroke(BLACK)
+  fill(WHITE)
+  ellipse(0, 0, 150, 150) # Outer Eye
+  no_stroke()
+  fill(BLUE)
+  ellipse(0, 0, 80, 80) # Iris
+  fill(BLACK)
+  ellipse(0, 0, 35, 35) # Pupil
+  fill(WHITE, 70)
+  ellipse(-25, -20, 30, 30) # Catchlight
+  ellipse(25, 25, 10, 10) # Catchlight
+
+--- /code ---
