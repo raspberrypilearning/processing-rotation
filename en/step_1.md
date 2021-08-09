@@ -33,7 +33,6 @@ def draw():
     eye()
     rotate(radians(45))
 
-  rotate(radians(-45)) # Undo rotate
   popMatrix() # Restores previous screen settings
   
   translate(100, 0) # Move screen to the right for right eye
