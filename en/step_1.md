@@ -7,7 +7,7 @@ Positive numbers rotate objects in a clockwise direction and negative numbers ro
 
 In this example, the planet image is positioned with the planet centre in the middle of the screen. The screen is set to rotate around the middle moving one degrees each time it is redrawn. 
 
-![The output area with a planet rotating around the centre](images/planet_rotate.gif)
+![The output area with a planet rotating around the centre](images/rotate_planet.gif)
 
 --- code ---
 ---
