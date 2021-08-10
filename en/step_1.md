@@ -1,9 +1,32 @@
 
 `Rotate()` moves the screen around a set of coordinates. In Processing, rotations happen in **radians** but you can convert this to **degrees** using the `radians()` function, `rotate(radians(90))` would be equal to rotating `90` degrees. 
 
-Positive numbers rotate objects in a clockwise direction and negative numbers rotate in the couterclockwise direction. 
+Positive numbers rotate objects in a clockwise direction and negative numbers rotate in the counterclockwise direction. 
 
-In this example, the screen is rotated by `45` degrees when the eyes are being drawn to give them the impression they are moving around. However, to align the eyes horizonatlly across the screen we want to restore the original settings before drawing the next eye. The `pushMatrix()` function saves the settings as they were before the first eye is drawn then the `popMatrix()` function restores those settings before the second eye is drawn. 
+### Rotating the screen
+
+In this example, the planet image is positioned with the planet centre in the middle of the screen. The screen is set to rotate around the middle moving one degrees each time it is redrawn. 
+
+![The output area with a planet rotating around the centre](images/planet_rotate.gif)
+
+--- code ---
+---
+language: python
+---
+
+def draw():
+  translate(200,200) # The middle of the screen
+  for i in range(frame_count):
+    image(planet, -150, -150, 300, 300) 
+    rotate(radians(1))
+    
+--- /code ---
+
+### Rotating parts of the drawing
+
+In this example, the screen is rotated by `45` degrees when the eyes are being drawn to give them the impression they are moving around. 
+
+However, to align the eyes horizontally across the screen we want to restore the original settings before drawing the next eye. The `pushMatrix()` function saves the settings as they were before the first eye is drawn then the `popMatrix()` function restores those settings before the second eye is drawn. 
 
 All translations and rotations are reset every time `draw()` begins again. 
 
