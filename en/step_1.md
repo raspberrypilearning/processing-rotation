@@ -3,7 +3,9 @@
 
 Positive numbers rotate objects in a clockwise direction and negative numbers rotate in the couterclockwise direction. 
 
-In this example, the screen is rotated `45` degrees everytime the `eye()` is drawn. 
+In this example, the screen is rotated by `45` degrees when the eyes are being drawn to give them the impression they are moving around. However, to align the eyes horizonatlly across the screen we want to restore the original settings before drawing the next eye. The `pushMatrix()` function saves the settings as they were before the first eye is drawn then the `popMatrix()` function restores those settings before the second eye is drawn. 
+
+All translations and rotations are reset every time `draw()` begins again. 
 
 ![The output area with a moving image showing a rotating eye made of circles](images/rotate_eyes.gif)
 
@@ -33,7 +35,7 @@ def draw():
     eye()
     rotate(radians(45))
 
-  popMatrix() # Restores previous screen settings
+  popMatrix() # Restores previous screen settings (removes the eye translation and rotation)
   
   translate(100, 0) # Move screen to the right for right eye
   for i in range(frame_count):
