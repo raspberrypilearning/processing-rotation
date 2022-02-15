@@ -1,0 +1,23 @@
+The middle of the screen
+
+Move screen to the middle
+
+Head
+
+Saves current screen settings
+
+Move screen to the left for left eye
+
+Restores previous screen settings (removes the eye translation and rotation)
+
+Move screen to the right for right eye
+
+Outer eye
+
+Iris
+
+Pupil
+
+Catchlight 1 with opacity
+
+Catchlight 2 with opacity
