@@ -1,0 +1,9 @@
+draw
+
+BLUE
+
+BLACK
+
+WHITE
+
+eye
