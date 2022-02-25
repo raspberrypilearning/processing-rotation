@@ -1,23 +1,23 @@
-The middle of the screen
+منتصف الشاشة
 
-Move screen to the middle
+حرك الشاشة الى المنتصف
 
-Head
+الراس
 
-Saves current screen settings
+حفظ اعدادات الشاشة الحالية
 
-Move screen to the left for left eye
+استعادة الاعدادات السابقة للشاشة (قم بزالة الترجمة والتدوير من العين)
 
-Restores previous screen settings (removes the eye translation and rotation)
+عادة أعدادات الشاشة السابقة (قم بإزالة تَرْجَمَة ودوران العين )
 
-Move screen to the right for right eye
+حرك الشاشة باتجاه اليمين الموجب للعين 
 
-Outer eye
+العين الخارجية
 
-Iris
+قزحية
 
 Pupil
 
-Catchlight 1 with opacity
+Catchlight 1 مع عتامه
 
-Catchlight 2 with opacity
+Catchlight 2 مع عتامه
