@@ -1,13 +1,13 @@
 
-`rotate()` moves the screen around a set of coordinates. In Processing, rotations happen in **radians** but you can convert this to **degrees** using the `radians()` function, `rotate(radians(90))` would be equal to rotating `90` degrees.
+`تدوير ()` يحرك الشاشة حول مجموعة إحداثيات. في المعالجة، يكون الدوران باستخدام **نصف قطر** ولكن يمكنك تحويل ذلك إلى **درجة** باستخدام الدالة `radians()` ، ` rotate(radians(90))` بمعنى أنها ستدور بمقدار `90` درجة.
 
-Positive numbers rotate objects in a clockwise direction and negative numbers rotate in the counterclockwise direction.
+تعمل الأرقام الموجبة على تدوير الكائنات في اتجاه عقارب الساعة وتدور الأرقام السالبة الكائنات عكس اتجاه عقارب الساعة.
 
-### Rotating the screen
+### تدوير الشاشة
 
-In this example, the planet image is positioned with the planet centre in the middle of the screen. The screen is set to rotate around the middle moving one degrees each time it is redrawn.
+في هذا المثال ، يتم وضع صورة الكوكب مع وجود مركز الكوكب في منتصف الشاشة. يتم ضبط الشاشة أن تدور حول المركز درجة واحدة في كل مرة يتم إعادة رسمها.
 
-![The output area with a planet rotating around the centre](images/rotate_planet.gif)
+![منطقة الإخراج مع كوكب يدور حول المركز](images/rotate_planet.gif)
 
 --- code ---
 ---
@@ -18,15 +18,15 @@ def draw(): translate(200,200) # The middle of the screen for i in range(frame_c
 
 --- /code ---
 
-### Rotating parts of the drawing
+### تدوير أجزاء من الرسم
 
-In this example, the screen is rotated by `45` degrees when the eyes are being drawn to give them the impression they are moving around.
+في هذا المثال، يتم تدوير الشاشة بمقدار `45` درجة عند رسم العينين لمنحها الانطباع بأنها تتحرك.
 
-However, to align the eyes horizontally across the screen we want to restore the original settings before drawing the next eye. The `pushMatrix()` function saves the settings as they were before the first eye is drawn then the `popMatrix()` function restores those settings before the second eye is drawn.
+ومع ذلك، لمحاذاة العيون أفقيًا عبر الشاشة، نريد استعادة الإعدادات الأصلية قبل رسم العين التالية. تقوم الدالة `pushMatrix ()` بحفظ الإعدادات كما كانت قبل رسم العين الأولى ثم تستعيد الدالة `popMatrix ()` هذه الإعدادات قبل رسم العين الثانية.
 
-All translations and rotations are reset every time `draw()` begins again.
+تتم إعادة تعيين جميع الترجمات والتدويرات في كل مرة يبدأ فيها الرسم `draw()` مرة أخرى.
 
-![The output area with a moving image showing a rotating eye made of circles](images/rotate_eyes.gif)
+![منطقة الإخراج مع صورة متحركة تظهر عين دوارة مصنوعة من الدوائر](images/rotate_eyes.gif)
 
 --- code ---
 ---
@@ -53,7 +53,7 @@ def draw():
 
 def eye():
 
-# Create an eye
+# اصنع عين
   fill(WHITE) ellipse(0, 0, 150, 150) # Outer eye no_stroke() fill(BLUE) ellipse(0, 0, 80, 80) # Iris fill(BLACK) ellipse(0, 0, 35, 35) # Pupil fill(WHITE, 70) ellipse(-25, -20, 30, 30) # Catchlight 1 with opacity ellipse(25, 25, 10, 10) # Catchlight 2 with opacity
 
 --- /code ---
