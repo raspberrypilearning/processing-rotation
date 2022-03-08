@@ -1,23 +1,23 @@
-The middle of the screen
+Το μέσο της οθόνης
 
-Move screen to the middle
+Μετακίνησε την οθόνη στη μέση
 
-Head
+Κεφάλι
 
-Saves current screen settings
+Αποθηκεύει τις τρέχουσες ρυθμίσεις οθόνης
 
-Move screen to the left for left eye
+Μετακίνησε την οθόνη προς τα αριστερά για το αριστερό μάτι
 
-Restores previous screen settings (removes the eye translation and rotation)
+Επαναφέρει τις προηγούμενες ρυθμίσεις οθόνης (καταργεί τη μεταφορά και την περιστροφή των ματιών)
 
-Move screen to the right for right eye
+Μετακίνησε την οθόνη προς τα δεξιά για το δεξιό μάτι
 
-Outer eye
+Εξωτερικό μάτι
 
-Iris
+Ίριδα
 
-Pupil
+Κόρη
 
-Catchlight 1 with opacity
+Λαμπύρισμα 1 με αδιαφάνεια
 
-Catchlight 2 with opacity
+Λαμπύρισμα 2 με αδιαφάνεια
