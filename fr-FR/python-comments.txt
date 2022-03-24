@@ -1,0 +1,23 @@
+Le milieu de l'écran
+
+Déplacer l'écran vers le milieu
+
+Tête
+
+Enregistre les paramètres d'écran actuels
+
+Déplacer l'écran vers la gauche pour l'œil gauche
+
+Restaure les paramètres d'écran précédents (supprime la translation et la rotation des yeux)
+
+Déplacer l'écran vers la droite pour l'œil droit
+
+Oeil extérieur
+
+Iris
+
+Pupille
+
+Reflet spéculaire 1 avec opacité
+
+Reflet spéculaire 2 avec opacité
