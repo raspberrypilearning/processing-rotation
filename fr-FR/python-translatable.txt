@@ -1,9 +1,9 @@
-draw
+dessiner
 
-BLUE
+BLEU
 
-BLACK
+NOIR
 
-WHITE
+BLANC
 
-eye
+œil
