@@ -30,7 +30,7 @@ Cependant, pour aligner les yeux horizontalement sur l'écran, nous souhaitons r
 
 Toutes les translations et rotations sont réinitialisées à chaque fois que `draw()` recommence.
 
-![La zone de sortie avec une image animée montrant un œil rotatif composé de cercles](images/rotate_eyes.gif)
+![La zone de sortie avec une image animée montrant un œil rotatif composé de cercles](images/rotate_œils.gif)
 
 --- code ---
 ---
@@ -39,43 +39,43 @@ language: python
 
 def draw():
   
-  global BLUE, BLACK, WHITE
+  global BLEU, NOIR, BLANC
 
-  BLUE = color(1, 32, 100)
-  BLACK = color(0, 0, 0)
-  WHITE = color(255, 255, 255)
+  BLEU = color(1, 32, 100)
+  NOIR = color(0, 0, 0)
+  BLANC = color(255, 255, 255)
  
-  background(WHITE)
+  background(BLANC)
   translate(width/2, height/2) # Déplacer l'écran vers le milieu 
 
-  stroke(BLACK)
+  stroke(NOIR)
   ellipse(0, 0, 300, 300) # Tête
   
   pushMatrix() # Enregistre les paramètres d'écran actuels
   
   translate(-100, 0) # Déplacer l'écran vers la gauche pour l'œil gauche
   for i in range(frame_count):
-    eye()
+    œil()
     rotate(radians(45))
 
   popMatrix() # Restaure les paramètres d'écran précédents (supprime la translation et la rotation des yeux)
   
   translate(100, 0) # Déplacer l'écran vers la droite pour l'œil droit
   for i in range(frame_count):
-    eye()
+    œil()
     rotate(radians(45))    
   
-def eye():
+def œil():
   
 # Créer un œil
-  fill(WHITE)
+  fill(BLANC)
   ellipse(0, 0, 150, 150) # Oeil extérieur
   no_stroke()
-  fill(BLUE)
+  fill(BLEU)
   ellipse(0, 0, 80, 80) # Iris
-  fill(BLACK)
+  fill(NOIR)
   ellipse(0, 0, 35, 35) # Pupille
-  fill(WHITE, 70)
+  fill(BLANC, 70)
   ellipse(-25, -20, 30, 30) # Reflet spéculaire 1 avec opacité
   ellipse(25, 25, 10, 10) # Reflet spéculaire 2 avec opacité
 
