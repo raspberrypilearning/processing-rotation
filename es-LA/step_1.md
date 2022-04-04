@@ -1,13 +1,13 @@
 
 `rotate()` moves the screen around a set of coordinates. In Processing, rotations happen in **radians** but you can convert this to **degrees** using the `radians()` function, `rotate(radians(90))` would be equal to rotating `90` degrees.
 
-Positive numbers rotate objects in a clockwise direction and negative numbers rotate in the counterclockwise direction.
+Los números positivos giran los objetos en el sentido de las agujas del reloj y los números negativos giran en el sentido contrario a las agujas del reloj.
 
-### Rotating the screen
+### Girando la pantalla
 
-In this example, the planet image is positioned with the planet centre in the middle of the screen. The screen is set to rotate around the middle moving one degrees each time it is redrawn.
+En este ejemplo, la imagen del planeta se coloca con el centro del planeta en el centro de la pantalla. La pantalla está configurada para girar alrededor del centro, moviéndose un grado cada vez que se vuelve a dibujar.
 
-![The output area with a planet rotating around the centre](images/rotate_planet.gif)
+![El área de salida con un planeta girando alrededor del centro](images/rotate_planet.gif)
 
 --- code ---
 ---
@@ -18,15 +18,15 @@ def draw(): translate(200,200) # The middle of the screen for i in range(frame_c
 
 --- /code ---
 
-### Rotating parts of the drawing
+### Girando partes del dibujo
 
-In this example, the screen is rotated by `45` degrees when the eyes are being drawn to give them the impression they are moving around.
+En este ejemplo, la pantalla gira `45` grados cuando se dibujan los ojos para darles la impresión de que se están moviendo.
 
-However, to align the eyes horizontally across the screen we want to restore the original settings before drawing the next eye. The `pushMatrix()` function saves the settings as they were before the first eye is drawn then the `popMatrix()` function restores those settings before the second eye is drawn.
+Sin embargo, para alinear los ojos horizontalmente en la pantalla, queremos restaurar la configuración original antes de dibujar el siguiente ojo. La función `pushMatrix()` guarda la configuración tal como estaba antes de dibujar el primer ojo, luego la función `popMatrix()` restaura esa configuración antes de dibujar el segundo ojo.
 
 All translations and rotations are reset every time `draw()` begins again.
 
-![The output area with a moving image showing a rotating eye made of circles](images/rotate_eyes.gif)
+![El área de salida con una imagen en movimiento que muestra un ojo giratorio hecho de círculos](images/rotate_eyes.gif)
 
 --- code ---
 ---
@@ -53,7 +53,7 @@ def draw():
 
 def eye():
 
-# Create an eye
+# Crea un ojo
   fill(WHITE) ellipse(0, 0, 150, 150) # Outer eye no_stroke() fill(BLUE) ellipse(0, 0, 80, 80) # Iris fill(BLACK) ellipse(0, 0, 35, 35) # Pupil fill(WHITE, 70) ellipse(-25, -20, 30, 30) # Catchlight 1 with opacity ellipse(25, 25, 10, 10) # Catchlight 2 with opacity
 
 --- /code ---
