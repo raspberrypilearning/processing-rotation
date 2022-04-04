@@ -1,22 +1,22 @@
-The middle of the screen
+El medio de la pantalla
 
-Move screen to the middle
+Mueve la pantalla al centro
 
-Head
+Cabeza
 
-Saves current screen settings
+Guarda la configuración de pantalla actual
 
-Move screen to the left for left eye
+Mueve la pantalla a la izquierda para el ojo izquierdo
 
-Restores previous screen settings (removes the eye translation and rotation)
+Restaura la configuración de pantalla anterior (elimina la traslación y rotación de los ojos)
 
-Move screen to the right for right eye
+Mueve la pantalla a la derecha para el ojo derecho
 
-Outer eye
+Exterior del ojo
 
 Iris
 
-Pupil
+Pupila
 
 Catchlight 1 with opacity
 
