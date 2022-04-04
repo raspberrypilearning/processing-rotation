@@ -1,9 +1,9 @@
 draw
 
-BLUE
+AZUL
 
-BLACK
+NEGRO
 
-WHITE
+BLANCO
 
-eye
+ojo
