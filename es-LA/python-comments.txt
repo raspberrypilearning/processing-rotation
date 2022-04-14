@@ -1,0 +1,23 @@
+El medio de la pantalla
+
+Mueve la pantalla al centro
+
+Cabeza
+
+Guarda la configuración de pantalla actual
+
+Mueve la pantalla a la izquierda para el ojo izquierdo
+
+Restaura la configuración de pantalla anterior (elimina la traslación y rotación de los ojos)
+
+Mueve la pantalla a la derecha para el ojo derecho
+
+Exterior del ojo
+
+Iris
+
+Pupila
+
+Brillo ocular 1 con opacidad
+
+Brillo ocular 2 con opacidad
