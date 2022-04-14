@@ -18,6 +18,6 @@ Iris
 
 Pupila
 
-Catchlight 1 with opacity
+Brillo ocular 1 con opacidad
 
-Catchlight 2 with opacity
+Brillo ocular 2 con opacidad
