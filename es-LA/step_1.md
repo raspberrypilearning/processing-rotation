@@ -1,5 +1,5 @@
 
-`rotate()` mueve la pantalla alrededor de un eje de coordenadas. En Procesamiento, las rotaciones ocurren en **radianes** pero pueden convertirse a **grados** usando la función `radians()`, `rotate(radians (90))` sería igual a rotar `90` grados.
+`rotate()` mueve la pantalla alrededor de un eje de coordenadas. En Procesamiento, las rotaciones ocurren en **radianes** pero pueden convertirse a **grados** usando la función `radians()`, `rotate(radians(90))` sería igual a rotar `90` grados.
 
 Los números positivos giran los objetos en el sentido de las agujas del reloj y los números negativos giran en el sentido contrario a las agujas del reloj.
 
