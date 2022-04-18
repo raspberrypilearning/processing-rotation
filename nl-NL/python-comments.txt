@@ -1,23 +1,23 @@
-The middle of the screen
+Het midden van het scherm
 
-Move screen to the middle
+Scherm naar het midden verplaatsen
 
-Head
+Hoofd
 
-Saves current screen settings
+Slaat huidige scherminstellingen op
 
-Move screen to the left for left eye
+Verplaats het scherm naar links voor het linkeroog
 
-Restores previous screen settings (removes the eye translation and rotation)
+Herstel vorige scherminstellingen (verwijdert de locatie en draaiing van het oog)
 
-Move screen to the right for right eye
+Verplaats het scherm naar rechts voor het rechteroog
 
-Outer eye
+Buitenkant oog
 
 Iris
 
 Pupil
 
-Catchlight 1 with opacity
+Lichtinval 1 met doorzichtigheid
 
-Catchlight 2 with opacity
+Lichtinval 2 met doorzichtigheid
