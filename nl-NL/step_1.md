@@ -1,5 +1,5 @@
 
-`rotate()` moves the screen around a set of coordinates. In Processing, rotations happen in **radians** but you can convert this to **degrees** using the `radians()` function, `rotate(radians(90))` would be equal to rotating `90` degrees.
+`rotate()` draait het scherm rond een aantal coördinaten. In Processing, rotations happen in **radians** but you can convert this to **degrees** using the `radians()` function, `rotate(radians(90))` would be equal to rotating `90` degrees.
 
 Positive numbers rotate objects in a clockwise direction and negative numbers rotate in the counterclockwise direction.
 
