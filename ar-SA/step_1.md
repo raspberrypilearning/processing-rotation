@@ -1,5 +1,5 @@
 
-`تدوير ()` يحرك الشاشة حول مجموعة إحداثيات. في المعالجة، يكون الدوران باستخدام **نصف قطر** ولكن يمكنك تحويل ذلك إلى **درجة** باستخدام الدالة `radians()` ، ` rotate(radians(90))` بمعنى أنها ستدور بمقدار `90` درجة.
+`تدوير ()` يحرك الشاشة حول مجموعة إحداثيات. In Processing, rotations happen in **radians** but you can write the number of **degrees** and use the `radians()` function to convert it to radians, `rotate(radians(90))` would be equal to rotating `90` degrees.
 
 تعمل الأرقام الموجبة على تدوير الكائنات في اتجاه عقارب الساعة وتدور الأرقام السالبة الكائنات عكس اتجاه عقارب الساعة.
 
