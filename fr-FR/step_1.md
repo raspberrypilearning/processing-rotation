@@ -1,5 +1,5 @@
 
-`rotate()` déplace l'écran autour d'un ensemble de coordonnées. Dans Processing, les rotations se produisent en **radians** mais tu peux les convertir en **degrés** en utilisant la fonction `radians()` , `rotate(radians(90))` serait égal à une rotation de `90` degrés.
+`rotate()` déplace l'écran autour d'un ensemble de coordonnées. In Processing, rotations happen in **radians** but you can write the number of **degrees** and use the `radians()` function to convert it to radians, `rotate(radians(90))` would be equal to rotating `90` degrees.
 
 Les nombres positifs font pivoter les objets dans le sens des aiguilles d'une montre et les nombres négatifs dans le sens inverse des aiguilles d'une montre.
 
