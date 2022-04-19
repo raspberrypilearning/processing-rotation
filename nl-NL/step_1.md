@@ -1,5 +1,5 @@
 
-`rotate()` draait het scherm rond een aantal coördinaten. In Processing gebeurt draaien met **radialen**, maar je kunt dit veranderen naar **graden** door de `radians()` functie te gebruiken. `rotate(radians(90))` staat gelijk aan `90` graden draaien.
+`rotate()` draait het scherm rond een aantal coördinaten. In Processing, rotations happen in **radians** but you can write the number of **degrees** and use the `radians()` function to convert it to radians, `rotate(radians(90))` would be equal to rotating `90` degrees.
 
 Positieve getallen draaien objecten met de klok mee en negatieve getallen draaien tegen de klok in.
 
