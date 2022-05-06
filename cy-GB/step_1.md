@@ -1,13 +1,13 @@
 
-`rotate()` moves the screen around a set of coordinates. In Processing, rotations happen in **radians** but you can write the number of **degrees** and use the `radians()` function to convert it to radians, `rotate(radians(90))` would be equal to rotating `90` degrees.
+Mae `rotate()` yn symud y sgrin o amgylch set o gyfesurynnau. Yn Processing, mae cylchdroadau'n digwydd mewn **radianau** ond fe allwch chi ysgrifennu rhif y **graddau** a defnyddio'r swyddogaeth `radians()` i'w trosi'n radianau, byddai `rotate(radians(90))` yr un peth â chylchdroi `90` gradd.
 
-Positive numbers rotate objects in a clockwise direction and negative numbers rotate in the counterclockwise direction.
+Mae rhifau positif yn cylchdroi gwrthrychau yn glocwedd ac mae rhifau negatif yn cylchdroi yn wrthglocwedd.
 
-### Rotating the screen
+### Cylchdroi'r sgrin
 
-In this example, the planet image is positioned with the planet centre in the middle of the screen. The screen is set to rotate around the middle moving one degrees each time it is redrawn.
+Yn yr enghraifft hon, mae'r delwedd o'r blaned wedi'i lleoli gyda chanol y blaned yng nghanol y sgrin. Mae'r sgrin wedi'i gosod i gylchdroi o amgylch y canol gan symud un radd bob tro mae'n cael ei hail-lunio.
 
-![The output area with a planet rotating around the centre](images/rotate_planet.gif)
+![Yr ardal allbwn gyda phlaned yn cylchdroi o amgylch y canol](images/rotate_planet.gif)
 
 --- code ---
 ---
@@ -18,15 +18,15 @@ def draw(): translate(200,200) # The middle of the screen for i in range(frame_c
 
 --- /code ---
 
-### Rotating parts of the drawing
+### Cylchdroi rhannau o'r lluniad
 
-In this example, the screen is rotated by `45` degrees when the eyes are being drawn to give them the impression they are moving around.
+Yn yr enghraifft hon, mae'r sgrin yn cael ei chylchdroi `45` gradd pan fydd y llygaid yn cael eu llunio i roi'r argraff eu bod yn symud o gwmpas.
 
-However, to align the eyes horizontally across the screen we want to restore the original settings before drawing the next eye. The `pushMatrix()` function saves the settings as they were before the first eye is drawn then the `popMatrix()` function restores those settings before the second eye is drawn.
+Ond i alinio'r llygaid yn llorweddol ar draws y sgrin, rydyn ni am adfer y gosodiadau gwreiddiol cyn llunio'r llygad nesaf. Mae'r swyddogaeth `pushMatrix()` yn cadw'r gosodiadau fel yr oedden nhw cyn llunio'r llygad gyntaf ac yna mae'r swyddogaeth `popMatrix()` yn adfer y gosodiadau hynny cyn llunio'r ail lygad.
 
-All translations and rotations are reset every time `draw()` begins again.
+Mae'r holl drosiadau a chylchdroadau'n cael eu hailosod bob tro mae `draw()` yn dechrau eto.
 
-![The output area with a moving image showing a rotating eye made of circles](images/rotate_eyes.gif)
+![Yr ardal allbwn gyda delwedd yn symud, yn dangos llygad wedi'i gwneud o gylchoedd yn cylchdroi](images/rotate_eyes.gif)
 
 --- code ---
 ---
@@ -53,7 +53,7 @@ def draw():
 
 def eye():
 
-# Create an eye
+# Creu llygad
   fill(WHITE) ellipse(0, 0, 150, 150) # Outer eye no_stroke() fill(BLUE) ellipse(0, 0, 80, 80) # Iris fill(BLACK) ellipse(0, 0, 35, 35) # Pupil fill(WHITE, 70) ellipse(-25, -20, 30, 30) # Catchlight 1 with opacity ellipse(25, 25, 10, 10) # Catchlight 2 with opacity
 
 --- /code ---
