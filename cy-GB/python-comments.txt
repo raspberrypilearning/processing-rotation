@@ -1,23 +1,23 @@
-The middle of the screen
+Canol y sgrin
 
-Move screen to the middle
+Symud y sgrin i'r canol
 
-Head
+Pen
 
-Saves current screen settings
+Cadw'r gosodiadau sgrin presennol
 
-Move screen to the left for left eye
+Symud y sgrin i'r chwith ar gyfer y llygad chwith
 
-Restores previous screen settings (removes the eye translation and rotation)
+Adfer y gosodiadau sgrin blaenorol (tynnu trosiad a chylchdroad y llygad)
 
-Move screen to the right for right eye
+Symud y sgrin i'r dde ar gyfer y llygad dde
 
-Outer eye
+Tu allan y llygad
 
 Iris
 
-Pupil
+Cannwyll llygad
 
-Catchlight 1 with opacity
+Goleubwynt 1 gydag afloywder
 
-Catchlight 2 with opacity
+Goleubwynt 2 gydag afloywder
