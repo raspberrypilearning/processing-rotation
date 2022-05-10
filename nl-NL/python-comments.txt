@@ -1,0 +1,23 @@
+Het midden van het scherm
+
+Scherm naar het midden verplaatsen
+
+Hoofd
+
+Slaat huidige scherminstellingen op
+
+Verplaats het scherm naar links voor het linkeroog
+
+Herstel vorige scherminstellingen (verwijdert de locatie en draaiing van het oog)
+
+Verplaats het scherm naar rechts voor het rechteroog
+
+Buitenkant oog
+
+Iris
+
+Pupil
+
+Lichtinval 1 met doorzichtigheid
+
+Lichtinval 2 met doorzichtigheid
