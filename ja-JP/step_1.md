@@ -1,13 +1,13 @@
 
-`rotate()` moves the screen around a set of coordinates. In Processing, rotations happen in **radians** but you can write the number of **degrees** and use the `radians()` function to convert it to radians, `rotate(radians(90))` would be equal to rotating `90` degrees.
+`rotate()`は、座標に沿って画面を回転させます。 Processingでは、回転には**radians**（ラジアン）を指定しますが、数字の**degrees**（角度）は`radians()`関数を使ってラジアンに変換できます。`rotate(radians(90))`は`90`度回転するのと同じことになります。
 
-Positive numbers rotate objects in a clockwise direction and negative numbers rotate in the counterclockwise direction.
+正の数値は物体を時計回りに回転させ、負の数値は反時計回りに回転させます。
 
-### Rotating the screen
+### 画面を回転させる
 
-In this example, the planet image is positioned with the planet centre in the middle of the screen. The screen is set to rotate around the middle moving one degrees each time it is redrawn.
+この例では、惑星の中心が画面の中心になるように、惑星の画像が配置されています。 画面が再描画されるたびに1度ずつ回転するよう設定されています。
 
-![The output area with a planet rotating around the centre](images/rotate_planet.gif)
+![中央で惑星が回転している出力エリア](images/rotate_planet.gif)
 
 --- code ---
 ---
@@ -18,15 +18,15 @@ def draw(): translate(200,200) # The middle of the screen for i in range(frame_c
 
 --- /code ---
 
-### Rotating parts of the drawing
+### 図形の一部分を回転させる
 
-In this example, the screen is rotated by `45` degrees when the eyes are being drawn to give them the impression they are moving around.
+この例では、目を描くたびに画面を`45`度ずつ回転させ、目がくるくる回っているように見せています。
 
-However, to align the eyes horizontally across the screen we want to restore the original settings before drawing the next eye. The `pushMatrix()` function saves the settings as they were before the first eye is drawn then the `popMatrix()` function restores those settings before the second eye is drawn.
+ただし、両目を画面全体で水平に揃えるには、次の目を描画する前に座標の移動や回転を元の設定に戻す必要があります。 `pushMatrix()`関数で最初の目が描画される前の設定を保存し、2番目の目が描画される前に`popMatrix()`関数で設定を復元します。
 
-All translations and rotations are reset every time `draw()` begins again.
+`draw()`が実行されるたびに、すべての平行移動と回転がリセットされます。
 
-![The output area with a moving image showing a rotating eye made of circles](images/rotate_eyes.gif)
+![円の集まりでできた目が回転している動く画像を表示する出力エリア](images/rotate_eyes.gif)
 
 --- code ---
 ---
@@ -53,7 +53,7 @@ def draw():
 
 def eye():
 
-# Create an eye
+# 目を作る
   fill(WHITE) ellipse(0, 0, 150, 150) # Outer eye no_stroke() fill(BLUE) ellipse(0, 0, 80, 80) # Iris fill(BLACK) ellipse(0, 0, 35, 35) # Pupil fill(WHITE, 70) ellipse(-25, -20, 30, 30) # Catchlight 1 with opacity ellipse(25, 25, 10, 10) # Catchlight 2 with opacity
 
 --- /code ---
