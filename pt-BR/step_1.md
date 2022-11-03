@@ -3,11 +3,11 @@
 
 Positive numbers rotate objects in a clockwise direction and negative numbers rotate in the counterclockwise direction.
 
-### Rotating the screen
+### Girando a tela
 
 In this example, the planet image is positioned with the planet centre in the middle of the screen. The screen is set to rotate around the middle moving one degrees each time it is redrawn.
 
-![The output area with a planet rotating around the centre](images/rotate_planet.gif)
+![A área de saída com um planeta girando em torno do centro](images/rotate_planet.gif)
 
 --- code ---
 ---
@@ -18,15 +18,15 @@ def draw(): translate(200,200) # The middle of the screen for i in range(frame_c
 
 --- /code ---
 
-### Rotating parts of the drawing
+### Partes rotativas do desenho
 
-In this example, the screen is rotated by `45` degrees when the eyes are being drawn to give them the impression they are moving around.
+Neste exemplo, a tela é girada em `45` graus quando os olhos estão sendo desenhados para dar a impressão de que estão se movendo.
 
-However, to align the eyes horizontally across the screen we want to restore the original settings before drawing the next eye. The `pushMatrix()` function saves the settings as they were before the first eye is drawn then the `popMatrix()` function restores those settings before the second eye is drawn.
+No entanto, para alinhar os olhos horizontalmente na tela, queremos restaurar as configurações originais antes de desenhar o próximo olho. A função `pushMatrix()` salva as configurações como estavam antes do primeiro olho ser desenhado, então a função `popMatrix()` restaura essas configurações antes que o segundo olho seja desenhado.
 
 All translations and rotations are reset every time `draw()` begins again.
 
-![The output area with a moving image showing a rotating eye made of circles](images/rotate_eyes.gif)
+![A área de saída com uma imagem em movimento mostrando um olho giratório feito de círculos](images/rotate_eyes.gif)
 
 --- code ---
 ---
@@ -53,7 +53,7 @@ def draw():
 
 def eye():
 
-# Create an eye
+# Crie um olho
   fill(WHITE) ellipse(0, 0, 150, 150) # Outer eye no_stroke() fill(BLUE) ellipse(0, 0, 80, 80) # Iris fill(BLACK) ellipse(0, 0, 35, 35) # Pupil fill(WHITE, 70) ellipse(-25, -20, 30, 30) # Catchlight 1 with opacity ellipse(25, 25, 10, 10) # Catchlight 2 with opacity
 
 --- /code ---
