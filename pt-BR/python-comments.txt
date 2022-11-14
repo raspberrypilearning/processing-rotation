@@ -1,4 +1,4 @@
-The middle of the screen
+O meio da tela
 
 Move a tela para o meio
 
@@ -8,11 +8,11 @@ Salva as configurações atuais da tela
 
 Movimenta o olho esquerdo
 
-Restores previous screen settings (removes the eye translation and rotation)
+Restaura as configurações anteriores (remove a translação e a rotação dos olhos)
 
 Movimenta o olho direito
 
-Outer eye
+Circulo externo do olho
 
 Íris
 
