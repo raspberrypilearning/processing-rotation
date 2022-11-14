@@ -1,0 +1,23 @@
+O meio da tela
+
+Move a tela para o meio
+
+Cabeça
+
+Salva as configurações atuais da tela
+
+Movimenta o olho esquerdo
+
+Restaura as configurações anteriores (remove a translação e a rotação dos olhos)
+
+Movimenta o olho direito
+
+Circulo externo do olho
+
+Íris
+
+Pupila
+
+Brilhos nos olhos 1
+
+Brilhos nos olhos 1
