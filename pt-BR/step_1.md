@@ -1,11 +1,11 @@
 
-`rotate()` moves the screen around a set of coordinates. In Processing, rotations happen in **radians** but you can write the number of **degrees** and use the `radians()` function to convert it to radians, `rotate(radians(90))` would be equal to rotating `90` degrees.
+`rotate()` rotaciona a tela em torno de um conjunto de coordenadas. Na execução do programa, as rotações acontecem em **radianos**, mas você pode escrever o número de **graus** e usar a função `radians()` para convertê-lo em radianos, `rotate(radians(90))` seria igual a girar `90` graus.
 
-Positive numbers rotate objects in a clockwise direction and negative numbers rotate in the counterclockwise direction.
+Números positivos giram os objetos no sentido horário e números negativos no sentido anti-horário.
 
 ### Girando a tela
 
-In this example, the planet image is positioned with the planet centre in the middle of the screen. The screen is set to rotate around the middle moving one degrees each time it is redrawn.
+Neste exemplo, o planeta está centralizado no meio da tela. A tela está configurada para girar ao redor do centro, movendo-se um grau cada vez que é redesenhada.
 
 ![A área de saída com um planeta girando em torno do centro](images/rotate_planet.gif)
 
@@ -24,7 +24,7 @@ Neste exemplo, a tela é girada em `45` graus quando os olhos estão sendo desen
 
 No entanto, para alinhar os olhos horizontalmente na tela, queremos restaurar as configurações originais antes de desenhar o próximo olho. A função `pushMatrix()` salva as configurações como estavam antes do primeiro olho ser desenhado, então a função `popMatrix()` restaura essas configurações antes que o segundo olho seja desenhado.
 
-All translations and rotations are reset every time `draw()` begins again.
+Todas as translações e rotações são redefinidas toda vez que `draw()` começa novamente.
 
 ![A área de saída com uma imagem em movimento mostrando um olho giratório feito de círculos](images/rotate_eyes.gif)
 
