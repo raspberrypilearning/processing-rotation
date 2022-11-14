@@ -1,0 +1,9 @@
+draw
+
+AZUL
+
+PRETO
+
+BRANCO
+
+olhos
