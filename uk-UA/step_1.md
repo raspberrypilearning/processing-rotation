@@ -1,13 +1,13 @@
 
-`rotate()` moves the screen around a set of coordinates. In Processing, rotations happen in **radians** but you can write the number of **degrees** and use the `radians()` function to convert it to radians, `rotate(radians(90))` would be equal to rotating `90` degrees.
+`rotate()` переміщує екран навколо заданих координат. У Processing, обертання відбуваються в **радіанах**, але ти можеш написати кількість **градусів** та використати функцію `radians()`, щоб перерахувати градуси в радіани, `rotate(radians(90))` буде дорівнювати обертанню на `90` градусів.
 
-Positive numbers rotate objects in a clockwise direction and negative numbers rotate in the counterclockwise direction.
+Додатні числа обертають об'єкти за годинниковою стрілкою, а від'ємні - проти годинникової стрілки.
 
-### Rotating the screen
+### Обертання екрана
 
-In this example, the planet image is positioned with the planet centre in the middle of the screen. The screen is set to rotate around the middle moving one degrees each time it is redrawn.
+У цьому прикладі, центр планети розташований посередині екрана. Екран обертається навколо середини, переміщуючись на один градус при кожному повторному малюванні.
 
-![The output area with a planet rotating around the centre](images/rotate_planet.gif)
+![Вихідна область з планетою, що обертається навколо центру](images/rotate_planet.gif)
 
 --- code ---
 ---
@@ -18,15 +18,15 @@ def draw(): translate(200,200) # The middle of the screen for i in range(frame_c
 
 --- /code ---
 
-### Rotating parts of the drawing
+### Обертання окремих елементів
 
-In this example, the screen is rotated by `45` degrees when the eyes are being drawn to give them the impression they are moving around.
+У цьому прикладі, коли малюються очі, екран повертається на `45` градусів, щоб створити враження, що очі рухаються.
 
-However, to align the eyes horizontally across the screen we want to restore the original settings before drawing the next eye. The `pushMatrix()` function saves the settings as they were before the first eye is drawn then the `popMatrix()` function restores those settings before the second eye is drawn.
+Однак, щоб розташувати очі горизонтально по екрана, нам потрібно відновити початкові налаштування, перед тим, як намалювати наступне око. Функція `pushMatrix()` зберігає налаштування в тому вигляді, в якому вони були до малювання першого ока, а потім функція `popMatrix()` відновлює ці налаштування перед малюванням другого ока.
 
-All translations and rotations are reset every time `draw()` begins again.
+Всі переклади та ротації кожного разу обнуляються, коли `draw()` знову викликається.
 
-![The output area with a moving image showing a rotating eye made of circles](images/rotate_eyes.gif)
+![Область виводу з рухомим зображенням, на якому зображено око, що обертається](images/rotate_eyes.gif)
 
 --- code ---
 ---
@@ -53,7 +53,7 @@ def draw():
 
 def eye():
 
-# Create an eye
+# Створення ока
   fill(WHITE) ellipse(0, 0, 150, 150) # Outer eye no_stroke() fill(BLUE) ellipse(0, 0, 80, 80) # Iris fill(BLACK) ellipse(0, 0, 35, 35) # Pupil fill(WHITE, 70) ellipse(-25, -20, 30, 30) # Catchlight 1 with opacity ellipse(25, 25, 10, 10) # Catchlight 2 with opacity
 
 --- /code ---
