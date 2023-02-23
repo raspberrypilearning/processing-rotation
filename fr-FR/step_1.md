@@ -1,5 +1,5 @@
 
-`rotate()` déplace l'écran autour d'un ensemble de coordonnées. In Processing, rotations happen in **radians** but you can write the number of **degrees** and use the `radians()` function to convert it to radians, `rotate(radians(90))` would be equal to rotating `90` degrees.
+`rotate()` déplace l'écran autour d'un ensemble de coordonnées. Dans Processing, les rotations se produisent en **radians** mais tu peux les convertir en **degrés** en utilisant la fonction `radians()` , `rotate(radians(90))` serait égal à une rotation de `90` degrés.
 
 Les nombres positifs font pivoter les objets dans le sens des aiguilles d'une montre et les nombres négatifs dans le sens inverse des aiguilles d'une montre.
 
@@ -24,7 +24,7 @@ Dans cet exemple, l'écran est tourné de `45` degrés lorsque les yeux sont des
 
 Cependant, pour aligner les yeux horizontalement sur l'écran, nous souhaitons restaurer les paramètres d'origine avant de dessiner l'œil suivant. La fonction `pushMatrix()` enregistre les paramètres tels qu'ils étaient avant le dessin du premier œil, puis la fonction `popMatrix()` restaure ces paramètres avant le dessin du deuxième œil.
 
-Toutes les translations et rotations sont réinitialisées à chaque fois que `dessiner()` recommence.
+Toutes les translations et rotations sont réinitialisées à chaque fois que `dessin()` recommence.
 
 ![La zone de sortie avec une image animée montrant un œil rotatif composé de cercles](images/rotate_eyes.gif)
 
