@@ -1,23 +1,23 @@
-The middle of the screen
+Центр екрана
 
-Move screen to the middle
+Переміщення екрана в центр
 
-Head
+Голова
 
-Saves current screen settings
+Зберігає поточні налаштування екрана
 
-Move screen to the left for left eye
+Переміщення екрана вліво для лівого ока
 
-Restores previous screen settings (removes the eye translation and rotation)
+Відновлення попередніх налаштувань екрана (видалення перекладу та обертання очей)
 
-Move screen to the right for right eye
+Переміщення екрана вправо для правого ока
 
-Outer eye
+Зовнішня частина ока
 
-Iris
+Райдужна оболонка
 
-Pupil
+Зіниця
 
-Catchlight 1 with opacity
+Світлові відблиски 1 з прозорістю
 
-Catchlight 2 with opacity
+Світлові відблиски 2 з прозорістю
