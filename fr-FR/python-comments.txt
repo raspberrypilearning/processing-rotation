@@ -12,7 +12,7 @@ Restaure les paramètres d'écran précédents (supprime la translation et la ro
 
 Déplacer l'écran vers la droite pour l'œil droit
 
-Oeil extérieur
+Œil extérieur
 
 Iris
 
