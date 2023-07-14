@@ -1,5 +1,5 @@
 
-`rotate()` mueve la pantalla alrededor de un eje de coordenadas. In Processing, rotations happen in **radians** but you can write the number of **degrees** and use the `radians()` function to convert it to radians, `rotate(radians(90))` would be equal to rotating `90` degrees.
+`rotar()` mueve la pantalla alrededor de un eje de coordenadas. En Procesamiento, las rotaciones ocurren en **radianes** pero pueden convertirse a **grados** usando la función `radianes()`, `rotar(radianes(90))` sería igual a rotar `90` grados.
 
 Los números positivos giran los objetos en el sentido de las agujas del reloj y los números negativos giran en el sentido contrario a las agujas del reloj.
 
@@ -24,7 +24,7 @@ En este ejemplo, la pantalla gira `45` grados cuando se dibujan los ojos para da
 
 Sin embargo, para alinear los ojos horizontalmente en la pantalla, queremos restaurar la configuración original antes de dibujar el siguiente ojo. La función `pushMatrix()` guarda la configuración tal como estaba antes de dibujar el primer ojo, luego la función `popMatrix()` restaura esa configuración antes de dibujar el segundo ojo.
 
-Todas las traslaciones y rotaciones se restablecen cada vez que `draw()` (dibujar) comienza de nuevo.
+Todas las traslaciones y rotaciones se restablecen cada vez que `dibujar()` comienza de nuevo.
 
 ![El área de salida con una imagen en movimiento que muestra un ojo giratorio hecho de círculos](images/rotate_eyes.gif)
 
