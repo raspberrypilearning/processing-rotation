@@ -40,9 +40,9 @@ language: python
 def draw():
     global BLUE, BLACK, WHITE
     
-    BLUE = color(1, 32, 100)
-    BLACK = color(0, 0, 0)
-    WHITE = color(255, 255, 255)
+    BLUE = Color(1, 32, 100)
+    BLACK = Color(0, 0, 0)
+    WHITE = Color(255, 255, 255)
     
     background(WHITE)
     translate(width/2, height/2)  # Move screen to the middle 
