@@ -50,14 +50,14 @@ def draw():
     stroke(BLACK)
     ellipse(0, 0, 300, 300)  # Head
     
-    pushMatrix()  # Saves current screen settings
+    push_matrix()  # Saves current screen settings
     
     translate(-100, 0)  # Move screen to the left for left eye
     for i in range(frame_count):
         eye()
         rotate(radians(45))
     
-    popMatrix()  # Restores previous screen settings (removes the eye translation and rotation)
+    pop_matrix()  # Restores previous screen settings (removes the eye translation and rotation)
     
     translate(100, 0)  # Move screen to the right for right eye
     for i in range(frame_count):
