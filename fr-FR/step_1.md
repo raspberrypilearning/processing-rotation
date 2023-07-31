@@ -30,7 +30,7 @@ Cependant, pour aligner les yeux horizontalement sur l'écran, nous souhaitons r
 
 Toutes les translations et rotations sont réinitialisées à chaque fois que `draw()` recommence.
 
-![La zone de sortie avec une image animée montrant un œil rotatif composé de cercles](images/rotate_œils.gif)
+![La zone de sortie avec une image animée montrant un œil rotatif composé de cercles](images/rotate_eyes.gif)
 
 --- code ---
 ---
