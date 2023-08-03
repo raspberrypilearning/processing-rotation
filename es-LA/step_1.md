@@ -30,7 +30,7 @@ Sin embargo, para alinear los ojos horizontalmente en la pantalla, queremos rest
 
 Todas las traslaciones y rotaciones se restablecen cada vez que `draw()` (dibujar) comienza de nuevo.
 
-![El área de salida con una imagen en movimiento que muestra un ojo giratorio hecho de círculos](images/rotate_ojos.gif)
+![El área de salida con una imagen en movimiento que muestra un ojo giratorio hecho de círculos](images/rotate_eyes.gif)
 
 --- code ---
 ---
