@@ -1,13 +1,13 @@
 
-`rotate()` moves the screen around a set of coordinates. In Processing, rotations happen in **radians** but you can write the number of **degrees** and use the `radians()` function to convert it to radians, `rotate(radians(90))` would be equal to rotating `90` degrees.
+`rotate()` sposta lo schermo attorno a un insieme di coordinate. In Processing, le rotazioni avvengono in **radianti** ma puoi scrivere il numero di **gradi** e usare la funzione `radians()` per convertirlo in radianti, `rotate(radians(90))` equivale a ruotare di `90` gradi.
 
-Positive numbers rotate objects in a clockwise direction and negative numbers rotate in the counterclockwise direction.
+I numeri positivi fanno ruotare gli oggetti in senso orario mentre i numeri negativi in senso antiorario.
 
-### Rotating the screen
+### Rotazione dello schermo
 
-In this example, the planet image is positioned with the planet centre in the middle of the screen. The screen is set to rotate around the middle moving one degrees each time it is redrawn.
+In questo esempio, l'immagine del pianeta è posizionata con il centro del pianeta al centro dello schermo. Lo schermo è impostato per ruotare attorno al centro spostandosi di un grado ogni volta che viene ridisegnato.
 
-![The output area with a planet rotating around the centre](images/rotate_planet.gif)
+![L'area di output con un pianeta che ruota attorno al centro](images/rotate_planet.gif)
 
 --- code ---
 ---
@@ -18,15 +18,15 @@ def draw(): translate(200,200)  # The middle of the screen for i in range(frame_
 
 --- /code ---
 
-### Rotating parts of the drawing
+### Rotazione di una parte del disegno
 
-In this example, the screen is rotated by `45` degrees when the eyes are being drawn to give them the impression they are moving around.
+In questo esempio, lo schermo viene ruotato di `45` gradi alla volta per dare l'impressione che gli occhi si muovano.
 
-However, to align the eyes horizontally across the screen we want to restore the original settings before drawing the next eye. The `pushMatrix()` function saves the settings as they were before the first eye is drawn then the `popMatrix()` function restores those settings before the second eye is drawn.
+Tuttavia, per allineare gli occhi orizzontalmente sullo schermo, procediamo ripristinando le impostazioni originali prima di disegnare l'occhio successivo. La funzione `pushMatrix()` salva i valori delle impostazioni prima che vengano modificate per disegnare il primo occhio, quindi la funzione `popMatrix()` ripristina tali impostazioni prima che venga disegnato il secondo occhio.
 
-All translations and rotations are reset every time `draw()` begins again.
+Tutte le traslazioni e le rotazioni vengono ripristinate a ogni esecuzione di `draw()`.
 
-![The output area with a moving image showing a rotating eye made of circles](images/rotate_eyes.gif)
+![L'area di output con un'immagine in movimento che mostra un occhio rotante fatto di cerchi](images/rotate_eyes.gif)
 
 --- code ---
 ---
