@@ -1,0 +1,23 @@
+Die Mitte des Bildschirms
+
+Bildschirm in die Mitte verschieben
+
+Kopf
+
+Speichert aktuelle Bildschirmeinstellungen
+
+Bewege den Bildschirm für das linke Auge nach links
+
+Stellt die vorherigen Bildschirmeinstellungen wieder her (entfernt die Augenverschiebung und -rotation)
+
+Bildschirm für das rechte Auge nach rechts verschieben
+
+Äußeres Auge
+
+Iris
+
+Pupille
+
+Lichtglanz 1 mit Durchsichtigkeit
+
+Lichtglanz 2 mit Durchsichtigkeit
